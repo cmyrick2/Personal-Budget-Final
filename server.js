@@ -121,7 +121,7 @@ app.post('/api/login', async (req, res) => {
 
                         let token = jwt.sign({ email: email}, secretKey, {expiresIn: "1d"});
 
-                        res.json({token: token, ok: 1});
+                        res.json({token: token, status: 'ok'});
                     });
                 });
             })
