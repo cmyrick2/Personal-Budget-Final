@@ -523,6 +523,91 @@ div.loginpage button:hover {
   background-color: #45a049;
 }
 
+div.loginPage {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  
+}
+div.loginpage form {
+  padding-bottom: 25px;
+  padding-top: 1px;
+}
+
+div.loginpage form h2 {
+  text-align: center;
+}
+
+div.loginpage form label {
+  font-size: 14pt;
+  text-align: left;
+}
+
+div.loginpage input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+div.signuppage form {
+  margin: 0 auto;
+  max-width: 420px;
+  font-size: 25pt;
+}
+
+div.signuppage button {
+  text-align: center;
+  width: 100%;
+  background-color: #45a094;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.signuppage button:hover {
+  background-color: #45a049;
+}
+
+div.signuppage {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  
+}
+div.signuppage form {
+  padding-bottom: 25px;
+  padding-top: 1px;
+}
+
+div.signuppage form h2 {
+  text-align: center;
+}
+
+div.signuppage form label {
+  font-size: 14pt;
+  text-align: left;
+}
+
+div.signuppage input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 
 
 

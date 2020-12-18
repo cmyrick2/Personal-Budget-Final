@@ -3,8 +3,8 @@ import axios from 'axios';
 import { reactLocalStorage } from "reactjs-localstorage";
 
 
-function loginpage() {
-  axios.post({method: 'POST', url: "http://localhost:3000/api/login", data: {
+function signuppage() {
+  axios.post({method: 'POST', url: "http://localhost:3000/api/signup", data: {
     username: document.getElementById("email").value,
     password: document.getElementById("password").value
   }
@@ -27,12 +27,12 @@ function loginpage() {
 
 
 
-function LoginPage() {
+function SignupPage() {
   return (
     
-    <div className="loginpage">
+    <div className="signuppage">
       <form>
-        <h2>Login</h2>
+        <h2>Sign Up</h2>
         <label>
             Email:
             <input type="text" name="email" id="email" placeholder="abc@gmail.com"/>
@@ -42,12 +42,10 @@ function LoginPage() {
             <input type="text" name="password" id="password" placeholder="123456"/>
         </label>
         <div>
-            <button onClick={loginpage}>Login</button>
+            <button onClick={signuppage}>Sign Up</button>
         </div>
       </form>
     </div>
   );
 }
-export default LoginPage;
-
-
+export default SignupPage;

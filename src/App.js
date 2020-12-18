@@ -14,6 +14,7 @@ import Footer from './containers/Footer/Footer';
 import AboutPage from './containers/AboutPage/AboutPage';
 import ChartPage from './containers/ChartPage/ChartPage';
 import LoginPage from './containers/LoginPage/LoginPage';
+import SignupPage from './containers/SignupPage/SignupPage';
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
           </Route>
           <Route path="/login">
             <LoginPage/>
+          </Route>
+          <Route path="/signup">
+            <SignupPage/>
           </Route>
           <Route path="/">
             <HomePage/>

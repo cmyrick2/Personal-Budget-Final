@@ -1,13 +1,13 @@
 const mongoose = require("mongoose")
 
-const pbSchema = new mongoose.Schema({
+const expenseSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true,
         unique: true,
         trim: true
     },
-    budget: {
+    expense: {
         type: Number,
         required: true,
     },
@@ -18,6 +18,6 @@ const pbSchema = new mongoose.Schema({
         trim: true,
         minlength: 6
     }
-}, {collection: 'personal_budget_collection'})
+}, {collection: 'expenses'})
 
-module.exports = mongoose.model('personal_budget_collection', pbSchema)
+module.exports = mongoose.model('ExpenseSchema', expenseSchema)
