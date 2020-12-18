@@ -5,7 +5,7 @@ import { reactLocalStorage } from "reactjs-localstorage";
 
 function loginpage() {
   axios.post({method: 'POST', url: "http://localhost:3000/api/login", data: {
-    username: document.getElementById("email").value,
+    email: document.getElementById("email").value,
     password: document.getElementById("password").value
   }
 }).then((res) => {
@@ -13,7 +13,7 @@ function loginpage() {
     if (res && res.data) {
       if (res.data.ok === 1) {
         reactLocalStorage.set("jwt", res.data.token);
-        reactLocalStorage.set("username", document.getElementById("username").value);
+        reactLocalStorage.set("email", document.getElementById("email").value);
         window.location.assign("/homepage");
       } else {
         document.getElementById("errorMessage").innerText = res.data.error;

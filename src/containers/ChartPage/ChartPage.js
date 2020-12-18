@@ -39,7 +39,7 @@ function ChartPage() {
   }
 
   function getExpense() {
-    axios.get('http://localhost:3000/budget')
+    axios.get('http://localhost:3000/api/expenses')
     .then(function (res) {
       console.log(res.data);
       for (var i = 0; i < res.data.myBudget.length; i++) {
