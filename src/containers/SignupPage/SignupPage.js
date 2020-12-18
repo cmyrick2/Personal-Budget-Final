@@ -12,6 +12,7 @@ function signuppage() {
     document.getElementById("password").value = "";
     if (res && res.data) {
       if (res.data === 'ok') {
+        console.log('Got the token: ', res.data);
         reactLocalStorage.set("jwt", res.data.token);
         reactLocalStorage.set("email", document.getElementById("email").value);
         window.location.assign("/homepage");
