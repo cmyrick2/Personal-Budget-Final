@@ -1,6 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import { reactLocalStorage } from "reactjs-localstorage";
 
 
 function signuppage() {
@@ -13,8 +12,8 @@ function signuppage() {
     if (res && res.data) {
       if (res.data === 'ok') {
         console.log('Got the token: ', res.data);
-        reactLocalStorage.set("jwt", res.data.token);
-        reactLocalStorage.set("email", document.getElementById("email").value);
+        localStorage.set("jwt", res.data.token);
+        localStorage.set("email", document.getElementById("email").value);
         window.location.assign("/homepage");
       } else {
         alert(res.error)
