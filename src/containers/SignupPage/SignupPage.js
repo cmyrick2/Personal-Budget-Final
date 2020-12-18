@@ -11,12 +11,12 @@ function signuppage() {
 }).then((res) => {
     document.getElementById("password").value = "";
     if (res && res.data) {
-      if (res.data.ok === 1) {
+      if (res.data === 'ok') {
         reactLocalStorage.set("jwt", res.data.token);
         reactLocalStorage.set("email", document.getElementById("email").value);
         window.location.assign("/homepage");
       } else {
-        document.getElementById("errorMessage").innerText = res.data.error;
+        alert(res.error)
       }
     } else {
       document.getElementById("errorMessage").innerText = "Unknown";
