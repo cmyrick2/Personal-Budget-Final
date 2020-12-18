@@ -7,13 +7,13 @@ import {
   Route
 } from "react-router-dom";
 
-import Menu from './Menu/Menu';
-import Hero from './Hero/Hero';
-import HomePage from './HomePage/HomePage';
-import Footer from './Footer/Footer';
-import AboutPage from './AboutPage/AboutPage';
-import ChartPage from './ChartPage/ChartPage';
-import LoginPage from './LoginPage/LoginPage';
+import Menu from './containers/Menu/Menu';
+import Hero from './containers/Hero/Hero';
+import HomePage from './containers/HomePage/HomePage';
+import Footer from './containers/Footer/Footer';
+import AboutPage from './containers/AboutPage/AboutPage';
+import ChartPage from './containers/ChartPage/ChartPage';
+import LoginPage from './containers/LoginPage/LoginPage';
 
 function App() {
   return (
