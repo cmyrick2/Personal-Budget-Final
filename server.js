@@ -47,12 +47,11 @@ app.post("/api/signup", (req, res) => {
         return res.json({ status: 'error', ok: 0, error: 'Invalid password'});
     }
 
-    if(password.length < 6) {
-        return res.json({ status: 'error', ok: 0, error: 'Password too small, must be at least 6 characters'});
+    if(password.length < 5) {
+        return res.json({ status: 'error', ok: 0, error: 'Password too small, must be at least 5 characters'});
     }
 
-    mongoose
-        .connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
+    mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
         .then(() => {
             User.findOne({
                 email: email
